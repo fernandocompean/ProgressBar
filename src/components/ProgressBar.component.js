@@ -5,9 +5,13 @@ const ProgressBar = (props) => {
 
   const containerStyles = {
     height: 20,
-    width: '100%',
+    width: '80%',
     backgroundColor: "#e0e0de",
-    borderRadius: 50
+    borderRadius: 50,
+    position: 'fixed',
+    top: '50%',
+    left: '10%',
+    display: 'flex',
   }
 
   const fillerStyles = {
@@ -26,12 +30,14 @@ const ProgressBar = (props) => {
     fontFamily: 'verdana'
   }
 
+  
+
   return (
-    <div style={containerStyles}>
-      <div style={fillerStyles}>
-        <span style={labelStyles}>{`${increment}%`}</span>
+      <div style={containerStyles}>
+        <div style={fillerStyles}>
+          <span style={labelStyles}>{`${increment}%`}</span>
+        </div>
       </div>
-    </div>
   );
 };
 

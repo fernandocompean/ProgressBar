@@ -13,8 +13,8 @@ function App() {
       setTimeout(updateProgressBar, 1000);
     }
   }
-
-  useEffect(updateProgressBar, []);
+  
+    useEffect(updateProgressBar, []);
 
   return (
     <div className="App">
